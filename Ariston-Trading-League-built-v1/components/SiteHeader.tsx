@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function SiteHeader(){return <header className="site-header"><div className="container header-inner"><Link href="/" className="brand"><img src="/ariston-logo.png" alt="Ariston Trading League"/></Link><nav className="nav"><Link href="/tournaments">Tournaments</Link><Link href="/leaderboard">Leaderboard</Link><Link href="/how-it-works">How it works</Link><Link href="/rules">Rules</Link><Link href="/contact">Contact</Link><Link href="/auth" className="btn">Sign in</Link></nav></div></header>}

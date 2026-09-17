@@ -1,0 +1,2 @@
+import {createClient} from "@/lib/supabase/server";import {NextResponse} from "next/server";
+export async function POST(req:Request){const s=await createClient();const origin=new URL(req.url).origin;const {data,error}=await s.auth.signInWithOAuth({provider:"google",options:{redirectTo:`${origin}/auth/callback`}});if(error||!data.url)return NextResponse.redirect(`${origin}/auth?error=oauth`);return NextResponse.redirect(data.url)}

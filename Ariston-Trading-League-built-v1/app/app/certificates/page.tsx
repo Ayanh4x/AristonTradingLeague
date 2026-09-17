@@ -1,0 +1,1 @@
+export default function Certificates(){return <div className="page"><div className="container"><div className="page-head"><div className="eyebrow">ACHIEVEMENTS</div><h1 className="serif">Certificates</h1></div><div className="card"><p className="muted">Certificates issued by the operations team will appear here.</p></div></div></div>}

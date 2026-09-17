@@ -1,0 +1,1 @@
+export default function MyTournaments(){return <div className="page"><div className="container"><div className="page-head"><div className="eyebrow">MY TOURNAMENTS</div><h1 className="serif">Tournaments</h1></div><div className="card"><p className="muted">No joined tournaments yet.</p></div></div></div>}
